@@ -26,6 +26,7 @@ canta(gumi, cancion(tellYourWorld, 5)).
 canta(seeU, cancion(novemberRain, 6)).
 canta(seeU, cancion(nightFever, 5)).
 
+
 % Para comenzar el concierto, es preferible introducir primero a los cantantes más novedosos, por lo que necesitamos un predicado para saber si un vocaloid es novedoso cuando saben al menos 2 canciones y el tiempo total que duran todas las canciones debería ser menor a 15.
 
 % novedoso(Cantante) :-
@@ -216,10 +217,10 @@ conoce(seeU, kaito).
 % ningunConocidoParticipa(Cantante, Concierto) :-
 
 
-unicoParticipanteEntreConocidos(Cantante,Concierto):- 
-    puedeParticipar(Cantante, Concierto),
-	not((conocido(Cantante, OtroCantante), 
-    puedeParticipar(OtroCantante, Concierto))).
+% unicoParticipanteEntreConocidos(Cantante,Concierto):- 
+%     puedeParticipar(Cantante, Concierto),
+% 	not((conocido(Cantante, OtroCantante), 
+%     puedeParticipar(OtroCantante, Concierto))).
 
 %Conocido directo
 conocido(Cantante, OtroCantante) :- 
